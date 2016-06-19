@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="60" id="KGk-i7-Jjw" customClass="HYMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呵呵：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-hc-3ne">
+                        <rect key="frame" x="10" y="5" width="365" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Sd-wJ-q4U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" red="0.97003235480000005" green="0.17059327704487875" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHh-82-a89">
+                        <rect key="frame" x="15" y="30" width="360" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WHh-82-a89" secondAttribute="bottom" id="Hfz-wG-BPE"/>
+                    <constraint firstItem="xhv-hc-3ne" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OT8-q2-RP4"/>
+                    <constraint firstItem="xhv-hc-3ne" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YCg-TR-ybU"/>
+                    <constraint firstAttribute="trailing" secondItem="xhv-hc-3ne" secondAttribute="trailing" id="hxa-f3-tGe"/>
+                    <constraint firstItem="WHh-82-a89" firstAttribute="top" secondItem="xhv-hc-3ne" secondAttribute="bottom" constant="5" id="mja-Dv-5gp"/>
+                    <constraint firstItem="WHh-82-a89" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uyh-es-ihq"/>
+                    <constraint firstAttribute="trailing" secondItem="WHh-82-a89" secondAttribute="trailing" id="wCA-cU-z12"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="message" destination="WHh-82-a89" id="8gN-xb-hVc"/>
+                <outlet property="name" destination="xhv-hc-3ne" id="yeq-j5-f7a"/>
+            </connections>
+            <point key="canvasLocation" x="423.5" y="365"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JDk-I7-3wO" customClass="HYNavigationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x99-Ld-Uza">
+                    <rect key="frame" x="312" y="5" width="58" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2ev-Vr-20a"/>
+                        <constraint firstAttribute="width" constant="50" id="5uJ-jt-670"/>
+                        <constraint firstAttribute="height" constant="39" id="KeY-3q-HK1"/>
+                        <constraint firstAttribute="width" constant="66" id="Ly3-T0-Ir3"/>
+                        <constraint firstAttribute="height" constant="26" id="M1U-fy-6fx"/>
+                        <constraint firstAttribute="width" constant="69" id="MdX-b1-rCM"/>
+                        <constraint firstAttribute="height" constant="26" id="RD0-g3-4nO"/>
+                        <constraint firstAttribute="width" constant="101" id="XRH-AA-a5j"/>
+                        <constraint firstAttribute="height" constant="40" id="hWt-AX-1n8"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="j65-Iw-4cB"/>
+                        <constraint firstAttribute="width" constant="58" id="xN3-5K-kMx"/>
+                        <constraint firstAttribute="height" constant="55" id="yUf-He-oq3"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="recorded_video_subscribe">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="recorded_video_subscribed"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5uJ-jt-670"/>
+                            <exclude reference="KeY-3q-HK1"/>
+                            <exclude reference="Ly3-T0-Ir3"/>
+                            <exclude reference="M1U-fy-6fx"/>
+                            <exclude reference="MdX-b1-rCM"/>
+                            <exclude reference="RD0-g3-4nO"/>
+                            <exclude reference="XRH-AA-a5j"/>
+                            <exclude reference="hWt-AX-1n8"/>
+                            <exclude reference="j65-Iw-4cB"/>
+                            <exclude reference="yUf-He-oq3"/>
+                        </mask>
+                    </variation>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErN-uL-XQD">
+                    <rect key="frame" x="0.0" y="39" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.74901357323232332" green="0.74901357323232332" blue="0.74901357323232332" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Vha-vx-frw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x99-Ld-Uza" secondAttribute="trailing" constant="23" id="0cm-2s-0Cb"/>
+                <constraint firstAttribute="trailing" secondItem="x99-Ld-Uza" secondAttribute="trailing" constant="5" id="A3P-Dw-j0O"/>
+                <constraint firstItem="ErN-uL-XQD" firstAttribute="leading" secondItem="JDk-I7-3wO" secondAttribute="leading" id="FgW-MV-NVP"/>
+                <constraint firstAttribute="bottom" secondItem="x99-Ld-Uza" secondAttribute="bottom" id="K1C-4r-tjN"/>
+                <constraint firstAttribute="trailing" secondItem="x99-Ld-Uza" secondAttribute="trailing" constant="8" id="P67-uP-YOM"/>
+                <constraint firstAttribute="trailing" secondItem="ErN-uL-XQD" secondAttribute="trailing" id="Uxt-Nn-LEm"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="top" secondItem="JDk-I7-3wO" secondAttribute="top" id="ZrL-Lj-QoS"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="top" secondItem="JDk-I7-3wO" secondAttribute="top" constant="8" id="agh-OL-0au"/>
+                <constraint firstAttribute="bottom" secondItem="ErN-uL-XQD" secondAttribute="bottom" id="dES-X5-q1e"/>
+                <constraint firstAttribute="bottom" secondItem="x99-Ld-Uza" secondAttribute="bottom" constant="8" id="dF8-es-ygr"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="top" secondItem="JDk-I7-3wO" secondAttribute="top" constant="5" id="eXh-47-QOx"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="top" secondItem="JDk-I7-3wO" secondAttribute="top" constant="14" id="fkH-bo-Mk8"/>
+                <constraint firstAttribute="bottom" secondItem="x99-Ld-Uza" secondAttribute="bottom" constant="5" id="gK9-QY-EIs"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="centerY" secondItem="JDk-I7-3wO" secondAttribute="centerY" id="iqs-AZ-64d"/>
+                <constraint firstAttribute="bottom" secondItem="x99-Ld-Uza" secondAttribute="bottom" constant="7" id="kpT-kS-MBE"/>
+                <constraint firstAttribute="trailing" secondItem="x99-Ld-Uza" secondAttribute="trailing" id="lNp-67-nOw"/>
+                <constraint firstItem="x99-Ld-Uza" firstAttribute="top" secondItem="JDk-I7-3wO" secondAttribute="top" constant="8" id="nYU-HL-y3n"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0cm-2s-0Cb"/>
+                    <exclude reference="K1C-4r-tjN"/>
+                    <exclude reference="P67-uP-YOM"/>
+                    <exclude reference="ZrL-Lj-QoS"/>
+                    <exclude reference="agh-OL-0au"/>
+                    <exclude reference="dF8-es-ygr"/>
+                    <exclude reference="fkH-bo-Mk8"/>
+                    <exclude reference="iqs-AZ-64d"/>
+                    <exclude reference="kpT-kS-MBE"/>
+                    <exclude reference="lNp-67-nOw"/>
+                    <exclude reference="nYU-HL-y3n"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="512.5" y="-29"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="recorded_video_subscribe" width="120" height="60"/>
+        <image name="recorded_video_subscribed" width="120" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wvt-cS-a5P" customClass="HYGiftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-5R-2j5">
+                    <rect key="frame" x="0.0" y="79" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.95993134469696972" green="0.95993134469696972" blue="0.95993134469696972" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="M6I-Ie-7RX"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-4q-F6O">
+                    <rect key="frame" x="0.0" y="80" width="121" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FWD-jR-r3y"/>
+                        <constraint firstAttribute="width" constant="121" id="a8O-oZ-DQR"/>
+                        <constraint firstAttribute="height" constant="41" id="ojY-AN-fiO"/>
+                    </constraints>
+                    <state key="normal" title="充值">
+                        <color key="titleColor" red="0.97003235480000005" green="0.36915638890000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="FWD-jR-r3y"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGO-Oo-zk7">
+                    <rect key="frame" x="307" y="80" width="68" height="41"/>
+                    <color key="backgroundColor" red="0.97003235480000005" green="0.36915638890000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="dQP-UO-QGr"/>
+                        <constraint firstAttribute="height" constant="30" id="kVs-Ij-H0c"/>
+                        <constraint firstAttribute="height" constant="41" id="oKi-hx-DkZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="赠送">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kVs-Ij-H0c"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acM-eY-kcf">
+                    <rect key="frame" x="158" y="80" width="97" height="41"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="W6t-Iq-pUa"/>
+                        <constraint firstAttribute="height" constant="41" id="wfi-IE-N4C"/>
+                    </constraints>
+                    <state key="normal" title="1">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="W6t-Iq-pUa"/>
+                        </mask>
+                    </variation>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-bb-EEu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wmw-bc-DQa">
+                        <size key="itemSize" width="75" height="90"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JmC-bb-EEu" firstAttribute="top" secondItem="wvt-cS-a5P" secondAttribute="top" id="1rS-7F-jyT"/>
+                <constraint firstItem="acM-eY-kcf" firstAttribute="leading" secondItem="wsL-4q-F6O" secondAttribute="trailing" constant="37" id="8f8-sq-QIQ"/>
+                <constraint firstAttribute="trailing" secondItem="JmC-bb-EEu" secondAttribute="trailing" id="BzG-Es-sBb"/>
+                <constraint firstItem="acM-eY-kcf" firstAttribute="top" secondItem="mOc-5R-2j5" secondAttribute="bottom" id="CSA-17-PuT"/>
+                <constraint firstAttribute="bottom" secondItem="wsL-4q-F6O" secondAttribute="bottom" id="KWS-od-q0V"/>
+                <constraint firstAttribute="trailing" secondItem="HGO-Oo-zk7" secondAttribute="trailing" id="NIX-AL-85R"/>
+                <constraint firstAttribute="bottom" secondItem="acM-eY-kcf" secondAttribute="bottom" id="Odd-0i-rQE"/>
+                <constraint firstItem="mOc-5R-2j5" firstAttribute="leading" secondItem="wvt-cS-a5P" secondAttribute="leading" id="R2z-52-2Vj"/>
+                <constraint firstAttribute="bottom" secondItem="mOc-5R-2j5" secondAttribute="bottom" constant="29" id="T6D-6N-K9a"/>
+                <constraint firstItem="JmC-bb-EEu" firstAttribute="leading" secondItem="wvt-cS-a5P" secondAttribute="leading" id="YaM-3F-JqP"/>
+                <constraint firstItem="HGO-Oo-zk7" firstAttribute="top" secondItem="JmC-bb-EEu" secondAttribute="bottom" id="dvb-gI-ynx"/>
+                <constraint firstItem="HGO-Oo-zk7" firstAttribute="leading" secondItem="acM-eY-kcf" secondAttribute="trailing" constant="52" id="nNu-CS-WQ3"/>
+                <constraint firstItem="wsL-4q-F6O" firstAttribute="leading" secondItem="wvt-cS-a5P" secondAttribute="leading" id="nii-yw-LC3"/>
+                <constraint firstAttribute="bottom" secondItem="HGO-Oo-zk7" secondAttribute="bottom" id="ot5-HA-LhY"/>
+                <constraint firstAttribute="trailing" secondItem="mOc-5R-2j5" secondAttribute="trailing" id="zQS-p2-95m"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="T6D-6N-K9a"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="giftColumnCollectionView" destination="JmC-bb-EEu" id="WNf-LG-Ba2"/>
+            </connections>
+            <point key="canvasLocation" x="443.5" y="162.5"/>
+        </view>
+    </objects>
+</document>

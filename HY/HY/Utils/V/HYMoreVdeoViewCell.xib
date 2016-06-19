@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoreVdeoViewCell" id="gTV-IL-0wX" customClass="HYMoreVdeoViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dn3-Y0-8xq">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="173"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主机游戏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-eb-62E">
+                        <rect key="frame" x="0.0" y="173" width="125" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="8dA-L0-37U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dn3-Y0-8xq" secondAttribute="trailing" id="2qO-Ld-vBl"/>
+                <constraint firstItem="Dn3-Y0-8xq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="48i-PS-hHC"/>
+                <constraint firstAttribute="bottom" secondItem="6nk-eb-62E" secondAttribute="bottom" id="CWc-DG-1NO"/>
+                <constraint firstAttribute="trailing" secondItem="6nk-eb-62E" secondAttribute="trailing" id="N7K-l2-W8Q"/>
+                <constraint firstItem="Dn3-Y0-8xq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q1S-Bh-hM7"/>
+                <constraint firstItem="6nk-eb-62E" firstAttribute="top" secondItem="Dn3-Y0-8xq" secondAttribute="bottom" id="sod-s8-kpL"/>
+                <constraint firstItem="6nk-eb-62E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vA5-MU-Et9"/>
+                <constraint firstItem="6nk-eb-62E" firstAttribute="top" secondItem="Dn3-Y0-8xq" secondAttribute="bottom" id="z4X-Wl-Njh"/>
+            </constraints>
+            <connections>
+                <outlet property="gameImageView" destination="Dn3-Y0-8xq" id="3sG-Qa-MtN"/>
+                <outlet property="gameName" destination="6nk-eb-62E" id="uOe-fE-u1N"/>
+            </connections>
+            <point key="canvasLocation" x="445.5" y="384"/>
+        </collectionViewCell>
+    </objects>
+</document>

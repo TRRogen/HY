@@ -1,0 +1,25 @@
+{
+    "code": 0,
+    "message": "",
+    "data":
+    [
+         {
+             "id": "lolbox",
+             "type": 2,
+             "orderIndex": 1000,
+             "groupIndex": 2,
+             "title": "多玩盒子",
+             "iconUrl": "http://a1.mzstatic.com/us/r30/Purple5/v4/db/68/ab/db68ab5b-ec88-34f6-bdc3-cd2465a3f1cb/icon175x175.png",
+             "url": "https://itunes.apple.com/us/app/duo-wan-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20he-zifor-ying-xiong/id698076980?ls=1&mt=8"
+         },
+         {
+             "id": "yy",
+             "type": 2,
+             "orderIndex": 1,
+             "groupIndex": 2,
+             "title": "手机YY",
+             "iconUrl": "http://a4.mzstatic.com/us/r30/Purple1/v4/a4/07/08/a407085d-2000-9ada-d008-3866d701f7c2/icon175x175.png",
+             "url": "https://itunes.apple.com/cn/app/yy-shi-pin-zhi-bo-hu-dong-she-qu/id427941017?mt=8"
+         }
+    ]
+}
